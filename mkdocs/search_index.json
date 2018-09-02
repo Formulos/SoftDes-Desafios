@@ -1,0 +1,74 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Bem vindo a documenta\u00e7\u00e3o do projeto\n\n\nEscolha sua documenta\u00e7\u00e3o:\n\n\nprofessor\n\n\naluno\n\n\ndesenvolvedor\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    about.md\n    ...       # Other markdown pages, images and other files.",
+            "title": "Home"
+        },
+        {
+            "location": "/#bem-vindo-a-documentacao-do-projeto",
+            "text": "",
+            "title": "Bem vindo a documenta\u00e7\u00e3o do projeto"
+        },
+        {
+            "location": "/#escolha-sua-documentacao",
+            "text": "",
+            "title": "Escolha sua documenta\u00e7\u00e3o:"
+        },
+        {
+            "location": "/#professor",
+            "text": "",
+            "title": "professor"
+        },
+        {
+            "location": "/#aluno",
+            "text": "",
+            "title": "aluno"
+        },
+        {
+            "location": "/#desenvolvedor",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    about.md\n    ...       # Other markdown pages, images and other files.",
+            "title": "desenvolvedor"
+        },
+        {
+            "location": "/cliente/",
+            "text": "Come\u00e7ando\n\n\nEntre no link do site que foi entrgue pelo profressor, ele tambem dara um usuario que tambem \u00e9 a senha.\nPrimeiramente entre no site e na pagina principal te\u0155a um bot\u00e3o no lado superior direto para trocar sua senha, \u00e9 importe troca-la para que ninguem fora voce tenha acesso.\n\n\nNa pagina principal esta todos os quizes que voce tem acesso, simplimente clike no qual voce quer ver e escolha o arquivo que o responda e o envie",
+            "title": "aluno"
+        },
+        {
+            "location": "/cliente/#comecando",
+            "text": "Entre no link do site que foi entrgue pelo profressor, ele tambem dara um usuario que tambem \u00e9 a senha.\nPrimeiramente entre no site e na pagina principal te\u0155a um bot\u00e3o no lado superior direto para trocar sua senha, \u00e9 importe troca-la para que ninguem fora voce tenha acesso.  Na pagina principal esta todos os quizes que voce tem acesso, simplimente clike no qual voce quer ver e escolha o arquivo que o responda e o envie",
+            "title": "Come\u00e7ando"
+        },
+        {
+            "location": "/professor/",
+            "text": "Adicionar alunos:\n\n\nPara adicioar um aluno \u00e9 necessario editar users.csv com o nome do usuario como por exemplo adiconar um aluno chamado Rodrigo:\n\n\nRodrigo,user\n\n\nDepois lembre de rodar adduser.py com a seguinte linha de comando:\n\n\npython3 adduser.py\n\n\n\nO a senha do aluno ser\u00e1 o seu nome \u00e9 ele troc\u00e1-la",
+            "title": "professor"
+        },
+        {
+            "location": "/professor/#adicionar-alunos",
+            "text": "Para adicioar um aluno \u00e9 necessario editar users.csv com o nome do usuario como por exemplo adiconar um aluno chamado Rodrigo:  Rodrigo,user  Depois lembre de rodar adduser.py com a seguinte linha de comando:  python3 adduser.py  O a senha do aluno ser\u00e1 o seu nome \u00e9 ele troc\u00e1-la",
+            "title": "Adicionar alunos:"
+        },
+        {
+            "location": "/desenvolvedor/",
+            "text": "Dependencias\n\n\n\u00e9 necessario ter flask-babel e sqlite3 \u00e9 possivel baixar elas com pip:\n\n\npip install flask-babel\n\npip install sqlite3\n\n\n\nDebug\n\n\nPara debugar o codigo \u00e9 possivel rodar softdes.py com o comando: \n\n\npython3 adduser.py\n\n\n\ntenha certeza que a porta usada esta aberta, a porta em uso pode ser achada na defini\u00e7\u00e3o no main em softdes.py\n\n\nbanco de dados\n\n\n\u00e9 possivel recriar o banco de dados usado usando o camando:\n\n\ncat quiz.sql | sqlite3 quiz.db",
+            "title": "desenvolvedor"
+        },
+        {
+            "location": "/desenvolvedor/#dependencias",
+            "text": "\u00e9 necessario ter flask-babel e sqlite3 \u00e9 possivel baixar elas com pip:  pip install flask-babel\n\npip install sqlite3",
+            "title": "Dependencias"
+        },
+        {
+            "location": "/desenvolvedor/#debug",
+            "text": "Para debugar o codigo \u00e9 possivel rodar softdes.py com o comando:   python3 adduser.py  tenha certeza que a porta usada esta aberta, a porta em uso pode ser achada na defini\u00e7\u00e3o no main em softdes.py",
+            "title": "Debug"
+        },
+        {
+            "location": "/desenvolvedor/#banco-de-dados",
+            "text": "\u00e9 possivel recriar o banco de dados usado usando o camando:  cat quiz.sql | sqlite3 quiz.db",
+            "title": "banco de dados"
+        }
+    ]
+}
