@@ -1,0 +1,7 @@
+site_name: Docs
+pages:
+    - Home: index.md
+    - aluno: cliente.md
+    - professor: professor.md
+    - desenvolvedor: desenvolvedor.md
+
