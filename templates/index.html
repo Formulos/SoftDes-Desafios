@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="./favicon.ico">
 
-    <title>SoftDes 2018.2</title>
+    <title>'SoftDes 2018.2</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
 		    <!-- menu -->
 			{% for e in challenges %}
 			<li class="nav-item">
-              <a class="nav-link" href="./?ID={{ e[0] }}">Desafio {{ e[1] }}</a>
+              <a class="nav-link" href="./?ID={{ e[0] }}">Desafio1 {{ e[1] }}</a>
             </li>
 			{% endfor %}
           </ul>
@@ -65,22 +65,22 @@
 
 		  {% if p == 3%}
 
-		  <h3>Trocar senha</h3>
+		  <h3>{{ _('Trocar senha') }}</h3>
 		  <div class="row text-left">
             <div class="col-2 col-md-2 placeholder"></div>
             <div class="col-10 col-md-10 placeholder">
               <form action="./pass" method="POST">
                 <div class="form-row">
                   <div class="form-group col-md-8">
-                    <label for="velha">Senha Antiga:</label>
+                    <label for="velha">{{ _('Senha Antiga:') }}</label>
                     <input type="password" class="form-control-file" id="velha" name="old">
-					<label for="nova">Senha Nova:</label>
+					<label for="nova">{{ _('Senha Nova:') }}</label>
                     <input type="password" class="form-control-file" id="nova" name="new">
-					<label for="respeteco">Repetir Senha Nova:</label>
+					<label for="respeteco">{{ _('Repetir Senha Nova:') }}</label>
                     <input type="password" class="form-control-file" id="repeteco" name="again">
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">{{ _('Enviar') }}</button>
               </form>
             </div>
           </div>
@@ -103,11 +103,11 @@
               <form action="?ID={{ quiz[0] }}" method="POST" enctype="multipart/form-data">
                 <div class="form-row">
                   <div class="form-group col-md-8">
-                    <label for="resposta">Resposta:</label>
+                    <label for="resposta">{{_('Resposta:')}}</label>
                     <input type="file" class="form-control-file" id="resposta" name="code">
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">{{_('Enviar')}}</button>
               </form>
 			{% endif %}
             </div>
@@ -118,9 +118,9 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>Data</th>
-                  <th>Feedback</th>
-                  <th>Resultado</th>
+                  <th>{{ _('Data')}}</th>
+                  <th>{{ _('Feedback')}}</th>
+                  <th>{{ _('Resultado')}}</th>
                 </tr>
               </thead>
               <tbody>

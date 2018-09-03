@@ -7,7 +7,8 @@ Created on Wed Jun 28 09:00:39 2017
 
 from flask import Flask, request, jsonify, abort, make_response, session, render_template
 from flask_httpauth import HTTPBasicAuth
-from flask_babel import Babel,_
+from flask_babel import Babel
+from flask_babel import _
 from flask_babel import lazy_gettext as _l
 from datetime import datetime
 import sqlite3
@@ -16,7 +17,10 @@ import hashlib
 
 DBNAME = './quiz.db'
 
-app = Flask(__name__)
+auth = HTTPBasicAuth()
+
+app = Flask(__name__, static_url_path='')
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?TX'
 babel = Babel(app)
 
 class Config(object):
@@ -25,7 +29,7 @@ class Config(object):
 
 @babel.localeselector
 def get_locale():
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
+    return 'en'#request.accept_languages.best_match(app.config['LANGUAGES'])
 
 def lambda_handler(event, context):
     try:
@@ -120,10 +124,6 @@ def getInfo(user):
     else:
         return info[0]
 
-auth = HTTPBasicAuth()
-
-app = Flask(__name__, static_url_path='')
-app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?TX'
 
 @app.route('/', methods=['GET', 'POST'])
 @auth.login_required

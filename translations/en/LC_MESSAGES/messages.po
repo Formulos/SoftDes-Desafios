@@ -1,17 +1,18 @@
-# Translations template for PROJECT.
+# English translations for PROJECT.
 # Copyright (C) 2018 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-09-03 16:54-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2018-09-03 15:27-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,39 +20,39 @@ msgstr ""
 
 #: softdes.py:140
 msgid "Boa tentativa, mas não vai dar certo!"
-msgstr ""
+msgstr "Good try but this is not going to work"
 
 #: softdes.py:147
 msgid "Sorry... Prazo expirado!"
-msgstr ""
+msgstr "Sorry... expired date"
 
 #: softdes.py:179
 msgid "Ainda não há desafios! Volte mais tarde."
-msgstr ""
+msgstr "There still are no chalagens! Come back later"
 
 #: softdes.py:186
 msgid "Oops... Desafio invalido!"
-msgstr ""
+msgstr "invalid Chalange"
 
 #: softdes.py:205
 msgid "As novas senhas nao batem"
-msgstr ""
+msgstr "the new passwords dont match"
 
 #: softdes.py:208
 msgid "A senha antiga nao confere"
-msgstr ""
+msgstr "The old passworld dosent match"
 
 #: softdes.py:212
 msgid "Senha alterada com sucesso"
-msgstr ""
+msgstr "password changed sucessefuly"
 
 #: templates/index.html:68
 msgid "Trocar senha"
-msgstr ""
+msgstr "Change password"
 
 #: templates/index.html:75
 msgid "Senha Antiga:"
-msgstr ""
+msgstr "Old password"
 
 #: templates/index.html:77
 msgid "Senha Nova:"
@@ -59,25 +60,49 @@ msgstr ""
 
 #: templates/index.html:79
 msgid "Repetir Senha Nova:"
-msgstr ""
+msgstr "New password"
 
 #: templates/index.html:83 templates/index.html:110
 msgid "Enviar"
-msgstr ""
+msgstr "Send"
 
 #: templates/index.html:106
 msgid "Resposta:"
-msgstr ""
+msgstr "Answer:"
 
 #: templates/index.html:121
 msgid "Data"
-msgstr ""
+msgstr "Data"
 
 #: templates/index.html:122
 msgid "Feedback"
-msgstr ""
+msgstr "Feedback"
 
 #: templates/index.html:123
 msgid "Resultado"
-msgstr ""
+msgstr "Result"
+
+#~ msgid "Trocar senha"
+#~ msgstr "Change password"
+
+#~ msgid "Senha Antiga:"
+#~ msgstr "Old password"
+
+#~ msgid "Senha Nova:"
+#~ msgstr "New password"
+
+#~ msgid "Repetir Senha Nova:"
+#~ msgstr "Repeat new password"
+
+#~ msgid "Enviar"
+#~ msgstr "Send"
+
+#~ msgid "Data"
+#~ msgstr "Data"
+
+#~ msgid "Feedback"
+#~ msgstr "Feedback"
+
+#~ msgid "Resultado"
+#~ msgstr "Result"
 

@@ -7,9 +7,3 @@
 ##[aluno](cliente.md)
 
 ##[desenvolvedor](desenvolvedor.md)
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        about.md
-        ...       # Other markdown pages, images and other files.
