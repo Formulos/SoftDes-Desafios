@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Bem vindo a documenta\u00e7\u00e3o do projeto\n\n\nEscolha sua documenta\u00e7\u00e3o:\n\n\nprofessor\n\n\naluno\n\n\ndesenvolvedor\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    about.md\n    ...       # Other markdown pages, images and other files.",
+            "text": "Bem vindo a documenta\u00e7\u00e3o do projeto\n\n\nEscolha sua documenta\u00e7\u00e3o:\n\n\nprofessor\n\n\naluno\n\n\ndesenvolvedor",
             "title": "Home"
         },
         {
@@ -27,7 +27,7 @@
         },
         {
             "location": "/#desenvolvedor",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    about.md\n    ...       # Other markdown pages, images and other files.",
+            "text": "",
             "title": "desenvolvedor"
         },
         {
