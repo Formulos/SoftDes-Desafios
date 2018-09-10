@@ -29,9 +29,10 @@ class Config(object):
 
 @babel.localeselector
 def get_locale():
-    return 'en'#request.accept_languages.best_match(app.config['LANGUAGES'])
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 def lambda_handler(event, context):
+    "checks if the input file solves the quiz" 
     try:
         import json 
         import numbers
@@ -95,6 +96,7 @@ def setUserQuiz(userid, quizid, sent, answer, result):
     conn.close()
 
 def getQuiz(id, user):
+    "selcts which quiz to show to user"
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
     if user == 'admin' or user == 'fabioja':
@@ -106,6 +108,7 @@ def getQuiz(id, user):
     return info
 
 def setInfo(pwd, user):
+    "update user and password"
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
     cursor.execute("UPDATE USER set pass = ? where user = ?",(pwd, user))
@@ -113,6 +116,7 @@ def setInfo(pwd, user):
     conn.close()
 
 def getInfo(user):
+    "update user and password"
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
     cursor.execute("SELECT pass, type from USER where user = '{0}'".format(user))
@@ -128,6 +132,7 @@ def getInfo(user):
 @app.route('/', methods=['GET', 'POST'])
 @auth.login_required
 def main():
+    """Runs the main logic of the site, handles the input file """
     msg = ''
     p = 1
     challenges=getQuizes(auth.username())
@@ -191,9 +196,11 @@ def main():
     
     return render_template('index.html', username=auth.username(), challenges=challenges, quiz=quiz[0], e=(sent > quiz[0][2]), answers=answers, p=p, msg=msg, expi = converteData(quiz[0][2]))
 
+
 @app.route('/pass', methods=['GET', 'POST'])
 @auth.login_required
 def change():
+    """try to change the user password"""
     if request.method == 'POST':
         velha = request.form['old']
         nova = request.form['new']
@@ -220,15 +227,23 @@ def change():
 
 @app.route('/logout')
 def logout():
+    """logout from session"""
     return render_template('index.html',p=2, msg="Logout com sucesso"), 401
+
+
 
 @auth.get_password
 def get_password(username):
+    "get the passworld from the session"
     return getInfo(username)
+
+
 
 @auth.hash_password
 def hash_pw(password):
+    "returnes the hashed version of the input password"
     return hashlib.md5(password.encode()).hexdigest()
+
 
 if __name__ == '__main__':
     app.run(debug=True, host= '0.0.0.0', port=8080)
